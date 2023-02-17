@@ -26,6 +26,15 @@ Getting Started
 
 1. Download and run the app.
 
+Summary
+---------------
+First codelab: Summary View model
+The Android app architecture guidelines recommend separating classes that have different responsibilities and driving the UI from a model.
+A UI controller is a UI-based class like Activity or Fragment. UI controllers should only contain logic that handles UI and operating system interactions; they shouldn't be the source of data to be displayed in the UI. Put that data and any related logic in a ViewModel.
+The ViewModel class stores and manages UI-related data. The ViewModel class allows data to survive configuration changes such as screen rotations.
+ViewModel is one of the recommended Android Architecture Components.
+
+
 License
 -------
 
