@@ -34,6 +34,13 @@ A UI controller is a UI-based class like Activity or Fragment. UI controllers sh
 The ViewModel class stores and manages UI-related data. The ViewModel class allows data to survive configuration changes such as screen rotations.
 ViewModel is one of the recommended Android Architecture Components.
 
+Second codelab: Summary LiveData
+LiveData holds data; LiveData is a wrapper that can be used with any data
+LiveData is observable, which means that an observer is notified when the data held by the LiveData object changes.
+LiveData is lifecycle-aware. When you attach an observer to the LiveData, the observer is associated with a LifecycleOwner (usually an Activity or Fragment). The LiveData only updates observers that are in an active lifecycle state such as STARTED or RESUMED. You can read more about LiveData and observation here.
+Apps can listen to the LiveData changes from the layout using Data Binding and binding expressions.
+Binding expressions are written within the layout in the attribute properties (such as android:text) referencing the layout properties.
+
 
 License
 -------
